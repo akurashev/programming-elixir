@@ -1,20 +1,13 @@
-# iex> a = [1, 2, 3]
-# [1, 2, 3]
+a = [1, 2, 3] # OK
 
-# iex> a = 4
-# 4
+a = 4 # OK
 
-# iex> 4 = a
-# 4
+4 = a # OK
 
-# iex> [a, b] = [1, 2, 3]
-# ** (MatchError) no match of right hand side value: [1, 2, 3]
+[a, b] = [1, 2, 3] # ** (MatchError) no match of right hand side value: [1, 2, 3]
 
-# iex> a = [[1, 2, 3]]
-# [[1, 2, 3]]
+a = [[1, 2, 3]] # OK
 
-# iex> [a] = [[1, 2, 3]]
-# [[1, 2, 3]]
+[a] = [[1, 2, 3]] # OK
 
-# iex> [[a]] = [[1, 2, 3]]
-# ** (MatchError) no match of right hand side value: [[1, 2, 3]]
+[[a]] = [[1, 2, 3]] # ** (MatchError) no match of right hand side value: [[1, 2, 3]]
